@@ -4,7 +4,7 @@
 <center> <h3>Thêm giảng viên</h3></center>
     <form action="" method="post">
            
-                <div class="col"><input type="text" name="txtten" placeholder="họ và tên"></div> </div>  
+                <div class="col"><input type="text" name="txthovaten" placeholder="họ và tên"></div> </div>  
                 <div class="col"><input type="text" name="txtngaysinh" placeholder="yyyy-mm-dd"></div> 
                 <div class="col"><input type="text" name="txttrinhdo" placeholder="trình độ"></div> 
                 <div class="col"><input type="text" name="txtchuyenmon" placeholder="chuyên môn"></div> 
