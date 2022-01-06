@@ -60,8 +60,11 @@
             return $result;
         }
         public function updateGV($id,$hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
+           
             $conn=$this->connectDB();
+          
             $sql="UPDATE giangvien SET hovaten='$hovaten' ,ngaysinh='$ngaysinh',gioitinh='$gioitinh',trinhdo='$trinhdo',chuyenmon='$chuyenmon',hocham='$hocham',hocvi='$hocvi',coquan='$coquan' WHERE magv='$magv'";
+            
             $result=mysqli_query($conn,$sql);
 
             $this-> closeDB($conn);
@@ -78,6 +81,7 @@
             $conn = $this->connectDB();
 
             $sql = "DELETE FROM giangvien WHERE magv = '$id'";
+            
             $result = mysqli_query($conn,$sql);
 
             $this->closeDB($conn);
