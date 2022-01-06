@@ -53,7 +53,7 @@
 
             $conn = $this->connectDB();
 
-            $sql ="INSERT INTO giangvien(hovaten,ngaysinh,gioitinh,trinhdo,chuyenmon,hocham,hocvi,coquan)";
+            $sql ="INSERT INTO giangvien(hovaten,ngaysinh,gioitinh,trinhdo,chuyenmon,hocham,hocvi,coquan) VALUES('$hovaten','$ngaysinh','$gioitinh','$trinhdo','$chuyenmon','$hocham','$hocvi','$coquan')";
 
             $result=mysqli_query($conn,$sql);
 
