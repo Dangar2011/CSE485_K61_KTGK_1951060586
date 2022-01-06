@@ -9,12 +9,12 @@
 
         function details(){
             $model = new model;
-            $id=$_GET['id'];
-            $data= $model -> getInfo($id);
+            $id= $_GET['id'];
+            $gv= $model -> getInfoGV($id);
             if($gv)
                     header("location:index.php");
             else    
-                    header("view/error.php");
+                    header("error.php");
         }
     }
     

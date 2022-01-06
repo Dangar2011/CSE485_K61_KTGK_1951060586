@@ -24,14 +24,15 @@
                ?>
                     <tr>
                          
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_hovaten']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_ngaysinh']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_gioitinh']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_trinhdo']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_chuyenmon']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_hocham']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_hocvi']; ?></a> </td>
-                         <td><a href="index.php?act=details&id=<?php echo $data['gv_id']; ?>"><?php echo $data['gv_coquan']; ?></a> </td>
+                         <th scope="row"><?php echo $gv['magv'];?></th>
+                         <td><?php echo $gv['hovaten']; ?> </td>
+                         <td><?php echo $gv['ngaysinh']; ?> </td>
+                         <td><?php echo $gv['gioitinh']; ?> </td>
+                         <td><?php echo $gv['trinhdo']; ?> </td>
+                         <td><?php echo $gv['chuyenmon']; ?> </td>
+                         <td><?php echo $gv['hocham']; ?></td>
+                         <td><?php echo $gv['hocvi']; ?> </td>
+                         <td><?php echo $gv['coquan']; ?></td>
                          
 
                     </tr>
