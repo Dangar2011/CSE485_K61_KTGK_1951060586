@@ -41,7 +41,7 @@
         function update(){
             $model = new model;
             $id=$_GET['id'];
-            $gv=$model->getInfoGV($magv);
+            $gv=$model->getInfoGV($id);
             require_once('view/update.php');
             if(isset($_POST['txthovaten'])){
                 $hovaten=$_POST['txthovaten'];
