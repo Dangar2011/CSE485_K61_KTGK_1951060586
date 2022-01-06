@@ -32,11 +32,11 @@
         }
 
         //chi tiet giang vien
-        public function getInfoGV($magv){
+        public function getInfoGV($id){
             
             $conn = $this->connectDB();
 
-            $sql = "SELECT * FROM giangvien WHERE magv = '$magv'";
+            $sql = "SELECT * FROM giangvien WHERE magv = '$id'";
             $result = mysqli_query($conn,$sql);
 
             if(mysqli_num_rows($result) > 0)
@@ -59,7 +59,7 @@
 
             return $result;
         }
-        public function updateGV($hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
+        public function updateGV($id,$hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
             $conn=$this->connectDB();
             $sql="UPDATE giangvien SET hovaten='$hovaten' ,ngaysinh='$ngaysinh',gioitinh='$gioitinh',trinhdo='$trinhdo',chuyenmon='$chuyenmon',hocham='$hocham',hocvi='$hocvi',coquan='$coquan' WHERE magv='$magv'";
             $result=mysqli_query($conn,$sql);
@@ -73,11 +73,11 @@
         }
 
 
-        public function dltGV($magv){
+        public function dltGV($id){
             
             $conn = $this->connectDB();
 
-            $sql = "DELETE FROM giangvien WHERE magv = '$magv'";
+            $sql = "DELETE FROM giangvien WHERE magv = '$id'";
             $result = mysqli_query($conn,$sql);
 
             if(mysqli_num_rows($result) > 0)

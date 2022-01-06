@@ -10,7 +10,7 @@
         function details(){
             $model = new model;
             $id= $_GET['id'];
-            $gv= $model -> getInfoGV($magv);
+            $gv= $model -> getInfoGV($id);
             if($gv)
                     header("location:index.php");
             else    
