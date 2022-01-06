@@ -4,6 +4,7 @@
 
 ?>
 <div class="container">
+<a class="btn btn-primary mt-3" href="index.php?act=add">Thêm</a>
      <table class="table">
           <thead>
                <tr>
@@ -16,6 +17,8 @@
                     <th scope="col"> Học hàm</th>
                     <th scope="col"> Học vị</th>
                     <th scope="col"> Cơ quan/Đơn vị</th>
+                    <th scope="col"> Sửa</th>
+                    <th scope="col">Xóa</th>
                </tr>
           </thead>
           <tbody>
@@ -33,7 +36,8 @@
                          <td><?php echo $gv['hocham']; ?></td>
                          <td><?php echo $gv['hocvi']; ?> </td>
                          <td><?php echo $gv['coquan']; ?></td>
-                         
+                         <td><a href="index.php?act=update&id=<?php echo $gv['magv']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                          <td><a href="index.php?act=delete&id=<?php echo $gv['magv']; ?>"><i class="bi bi-trash"></i></a></td>
 
                     </tr>
                          <?php
