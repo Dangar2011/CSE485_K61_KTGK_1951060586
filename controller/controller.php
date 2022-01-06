@@ -73,7 +73,7 @@
             $result=$model->dltGV($id);
             if($result)
                 header("location:index.php");
-            else
+                else
                 header("location:error.php");
         }
 

@@ -80,9 +80,6 @@
             $sql = "DELETE FROM giangvien WHERE magv = '$id'";
             $result = mysqli_query($conn,$sql);
 
-            if(mysqli_num_rows($result) > 0)
-                $nv = mysqli_fetch_assoc($result);
-
             $this->closeDB($conn);
             return $nv;
         }
