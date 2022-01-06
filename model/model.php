@@ -36,8 +36,6 @@
             
             $conn = $this->connectDB();
 
-
-           
             $sql = "SELECT * FROM giangvien WHERE magv = '$magv'";
             $result = mysqli_query($conn,$sql);
 
@@ -66,7 +64,7 @@
             $sql="UPDATE giangvien SET hovaten=$hovaten ,ngaysinh=$ngaysinh,gioitinh=$gioitinh,trinhdo=$trinhdo,chuyenmon=$chuyenmon,hocham=$hocham,hocvi=$hocvi,coquan=$coquan WHERE magv=$magv";
             $result=mysqli_query($conn,$sql);
 
-            $this-> closeDB();
+            $this-> closeDB($conn);
 
             return $result;
 
