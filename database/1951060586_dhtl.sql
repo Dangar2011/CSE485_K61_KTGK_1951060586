@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 06, 2022 lúc 07:11 AM
+-- Thời gian đã tạo: Th1 06, 2022 lúc 07:28 AM
 -- Phiên bản máy phục vụ: 10.4.20-MariaDB
 -- Phiên bản PHP: 8.0.9
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `giangvien`
+-- Cơ sở dữ liệu: `1951060586_dhtl`
 --
 
 -- --------------------------------------------------------
