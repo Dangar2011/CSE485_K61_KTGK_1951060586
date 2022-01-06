@@ -29,6 +29,7 @@
                 $coquan=$_POST['txtcoquan'];
                 $model = new model;
                 $result = $model->addGV( $hovaten,$ngaysinh, $gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan);
+                echo "a";
                 if($result)
                     header("location:index.php");
                 else    

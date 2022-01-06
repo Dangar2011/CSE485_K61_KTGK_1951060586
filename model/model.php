@@ -49,7 +49,7 @@
         }
         //them giang vien
 
-        public function addGv($hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
+        public function addGV($hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
 
             $conn = $this->connectDB();
 
