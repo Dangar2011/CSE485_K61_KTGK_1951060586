@@ -6,6 +6,7 @@
            
                 <div class="col"><input type="text" name="txtten" placeholder="họ và tên"></div> </div>  
                 <div class="col"><input type="text" name="txtngaysinh" placeholder="yyyy-mm-dd"></div> 
+                <div class="col"><input type="text" name="txtgioitinh" placeholder="Giới tính"></div> 
                 <div class="col"><input type="text" name="txttrinhdo" placeholder="trình độ"></div> 
                 <div class="col"><input type="text" name="txtchuyenmon" placeholder="chuyên môn"></div> 
                 <div class="col"><input type="text" name="txthocham" placeholder="Học hàm"></div> 

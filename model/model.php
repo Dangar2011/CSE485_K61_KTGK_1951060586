@@ -61,7 +61,7 @@
         }
         public function updateGV($hovaten,$ngaysinh,$gioitinh,$trinhdo,$chuyenmon,$hocham,$hocvi,$coquan){
             $conn=$this->connectDB();
-            $sql="UPDATE giangvien SET hovaten=$hovaten ,ngaysinh=$ngaysinh,gioitinh=$gioitinh,trinhdo=$trinhdo,chuyenmon=$chuyenmon,hocham=$hocham,hocvi=$hocvi,coquan=$coquan WHERE magv=$magv";
+            $sql="UPDATE giangvien SET hovaten='$hovaten' ,ngaysinh='$ngaysinh',gioitinh='$gioitinh',trinhdo='$trinhdo',chuyenmon='$chuyenmon',hocham='$hocham',hocvi='$hocvi',coquan='$coquan' WHERE magv='$magv'";
             $result=mysqli_query($conn,$sql);
 
             $this-> closeDB($conn);
@@ -70,6 +70,21 @@
 
 
 
+        }
+
+
+        public function dltGV($magv){
+            
+            $conn = $this->connectDB();
+
+            $sql = "DELETE FROM giangvien WHERE magv = '$magv'";
+            $result = mysqli_query($conn,$sql);
+
+            if(mysqli_num_rows($result) > 0)
+                $nv = mysqli_fetch_assoc($result);
+
+            $this->closeDB($conn);
+            return $nv;
         }
         
 

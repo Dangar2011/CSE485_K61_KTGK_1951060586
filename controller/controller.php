@@ -9,12 +9,12 @@
 
         function details(){
             $model = new model;
-            $magv= $_GET['magv'];
+            $id= $_GET['id'];
             $gv= $model -> getInfoGV($magv);
             if($gv)
                     header("location:index.php");
             else    
-                    header("error.php");
+                    header("location: error.php");
         }
         function add(){
              require_once('view/add.php');
@@ -36,9 +36,11 @@
 
              }
 
+        }
+
         function update(){
             $model = new model;
-            $magv=$_GET['magv'];
+            $id=$_GET['id'];
             $gv=$model->getInfoGV($magv);
             require_once('view/update.php');
             if(isset($_POST['txthovaten'])){
@@ -59,11 +61,23 @@
 
 
             }
-        }
 
 
 
         }
+
+
+        function delete(){
+            $model = new model;
+            $id=$_GET['id'];
+            $result=$model->dltGV($id);
+            if($result)
+                header("location:index.php");
+            else
+                header("location:error.php");
+        }
+
+        
 
 
     }
