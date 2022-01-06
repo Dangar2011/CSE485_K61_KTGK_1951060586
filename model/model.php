@@ -57,7 +57,7 @@
 
             $result=mysqli_query($conn,$sql);
 
-            $this->closeDB();
+            $this->closeDB($conn);
 
             return $result;
         }
